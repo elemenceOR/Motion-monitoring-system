@@ -1,0 +1,5 @@
+wifi_ssid = ""  
+wifi_password = ""  
+mqtt_server = "" 
+mqtt_username = "" 
+mqtt_password = ""

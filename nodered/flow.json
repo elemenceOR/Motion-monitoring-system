@@ -1,0 +1,798 @@
+[
+    {
+        "id": "f6f2187d.f17ca8",
+        "type": "tab",
+        "label": "data_line",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "4e6adcf9fbbb4bc2",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "topic": "pico/temperature",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "9e2894bb409a2310",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 280,
+        "y": 320,
+        "wires": [
+            [
+                "285fc7cc099c35a8",
+                "aed536db4d6df3df"
+            ]
+        ]
+    },
+    {
+        "id": "285fc7cc099c35a8",
+        "type": "debug",
+        "z": "f6f2187d.f17ca8",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "8f031c6714908b62",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "topic": "pico/ax",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "9e2894bb409a2310",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 380,
+        "wires": [
+            [
+                "285fc7cc099c35a8",
+                "1268f4fef180f2d5"
+            ]
+        ]
+    },
+    {
+        "id": "e184a05ae64a717a",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "topic": "pico/ay",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "9e2894bb409a2310",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 440,
+        "wires": [
+            [
+                "285fc7cc099c35a8",
+                "e9378fddc138f48c"
+            ]
+        ]
+    },
+    {
+        "id": "148a7df42624588b",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "topic": "pico/az",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "9e2894bb409a2310",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 500,
+        "wires": [
+            [
+                "285fc7cc099c35a8",
+                "7fc2f8e9f4ac0d9c"
+            ]
+        ]
+    },
+    {
+        "id": "aed536db4d6df3df",
+        "type": "ui-gauge",
+        "z": "f6f2187d.f17ca8",
+        "name": "Tempreture",
+        "group": "1b7160cafb0ffa5e",
+        "order": 0,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "rounded",
+        "title": "gauge",
+        "alwaysShowTitle": false,
+        "floatingTitlePosition": "top-left",
+        "units": "Celcius",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "-5",
+                "color": "#1100ff",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "15",
+                "color": "#05ff16",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "30",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": "-5",
+        "max": "30",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 690,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1f60e47f0471c54d",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "topic": "pico/gx",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "9e2894bb409a2310",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 560,
+        "wires": [
+            [
+                "285fc7cc099c35a8",
+                "25d7e5d88365dd11"
+            ]
+        ]
+    },
+    {
+        "id": "c132b9aca05a4ab2",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "topic": "pico/gy",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "9e2894bb409a2310",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 620,
+        "wires": [
+            [
+                "285fc7cc099c35a8",
+                "ea6c0736a8bc5745"
+            ]
+        ]
+    },
+    {
+        "id": "8b5f80e2eb1aa3d6",
+        "type": "mqtt in",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "topic": "pico/gz",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "9e2894bb409a2310",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 680,
+        "wires": [
+            [
+                "285fc7cc099c35a8",
+                "0f91f5fecb558cf6"
+            ]
+        ]
+    },
+    {
+        "id": "1268f4fef180f2d5",
+        "type": "ui-chart",
+        "z": "f6f2187d.f17ca8",
+        "group": "0bf4f473e7bb5869",
+        "name": "Ax",
+        "label": "chart",
+        "order": 9007199254740991,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "-5",
+        "ymax": "5",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "false",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "3",
+        "height": "4",
+        "className": "",
+        "interpolation": "linear",
+        "x": 670,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e9378fddc138f48c",
+        "type": "ui-chart",
+        "z": "f6f2187d.f17ca8",
+        "group": "0bf4f473e7bb5869",
+        "name": "Ay",
+        "label": "chart",
+        "order": 9007199254740991,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "-5",
+        "ymax": "5",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "false",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "3",
+        "height": "4",
+        "className": "",
+        "interpolation": "linear",
+        "x": 670,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7fc2f8e9f4ac0d9c",
+        "type": "ui-chart",
+        "z": "f6f2187d.f17ca8",
+        "group": "0bf4f473e7bb5869",
+        "name": "Az",
+        "label": "chart",
+        "order": 9007199254740991,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "-20",
+        "ymax": "20",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "false",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "3",
+        "height": "4",
+        "className": "",
+        "interpolation": "linear",
+        "x": 670,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "25d7e5d88365dd11",
+        "type": "ui-chart",
+        "z": "f6f2187d.f17ca8",
+        "group": "f4b20911ec276643",
+        "name": "Gx",
+        "label": "chart",
+        "order": 9007199254740991,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "-60",
+        "ymax": "60",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "false",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "3",
+        "height": "4",
+        "className": "",
+        "interpolation": "linear",
+        "x": 670,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ea6c0736a8bc5745",
+        "type": "ui-chart",
+        "z": "f6f2187d.f17ca8",
+        "group": "f4b20911ec276643",
+        "name": "Gy",
+        "label": "chart",
+        "order": 9007199254740991,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "-60",
+        "ymax": "60",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "false",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "3",
+        "height": "4",
+        "className": "",
+        "interpolation": "linear",
+        "x": 670,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0f91f5fecb558cf6",
+        "type": "ui-chart",
+        "z": "f6f2187d.f17ca8",
+        "group": "f4b20911ec276643",
+        "name": "Gz",
+        "label": "chart",
+        "order": 9007199254740991,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "-60",
+        "ymax": "60",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "false",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "3",
+        "height": "4",
+        "className": "",
+        "interpolation": "linear",
+        "x": 670,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9e2894bb409a2310",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "1b7160cafb0ffa5e",
+        "type": "ui-group",
+        "name": "Env",
+        "page": "b03747bf56a8f0a0",
+        "width": 6,
+        "height": 1,
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "0bf4f473e7bb5869",
+        "type": "ui-group",
+        "name": "accel",
+        "page": "fceaa35e1563931a",
+        "width": 6,
+        "height": 1,
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "f4b20911ec276643",
+        "type": "ui-group",
+        "name": "gyro",
+        "page": "fceaa35e1563931a",
+        "width": 6,
+        "height": 1,
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "b03747bf56a8f0a0",
+        "type": "ui-page",
+        "name": "Env",
+        "ui": "6d9f654b69aa2672",
+        "path": "/page2",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "default",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": -1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "fceaa35e1563931a",
+        "type": "ui-page",
+        "name": "Page 1",
+        "ui": "6d9f654b69aa2672",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "df9c25755100e9a4",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "6d9f654b69aa2672",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 1,
+        "showDisconnectNotification": true,
+        "allowInstall": false
+    },
+    {
+        "id": "df9c25755100e9a4",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "52ba8e7d45ce9873",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "@flowfuse/node-red-dashboard": "1.29.0"
+        }
+    }
+]
