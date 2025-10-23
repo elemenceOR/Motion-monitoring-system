@@ -38,7 +38,8 @@ All hardware wiring is documented in the **KiCad schematic** files (`/hardware/k
 | OLED (SH1106) | GP4     | GP5     | I²C0    |
 | IMU (MPU6050) | GP14    | GP15    | I²C1    |
 
-![1761058411164](image/Untitled-1/1761058411164.png)
+<img width="656" height="623" alt="1761058411164" src="https://github.com/user-attachments/assets/b8d7e91b-9705-4193-943c-fea04afe47f7" />
+
 
 ## 3D Model
 
@@ -50,7 +51,8 @@ The 3D model files (`/hardware/fusion360/`) include:
 * OLED screen cutout
 * USB access port
 
-![1761070833520](image/Untitled-1/1761070833520.png)
+<img width="855" height="664" alt="1761070833520" src="https://github.com/user-attachments/assets/5709612f-cf61-4c2b-8511-50e39ad6c195" />
+
 
 ## Software Architecture
 
@@ -110,3 +112,4 @@ mqtt_username = "" mqtt_password = ""`
 * The system performs a 10-second calibration on startup.
 * Keep the sensor **flat and still** during this period.
 * Offsets are automatically calculated and used to correct readings.
+
