@@ -52,6 +52,7 @@ The 3D model files (`/hardware/fusion360/`) include:
 * USB access port
 
 <img width="855" height="664" alt="1761070833520" src="https://github.com/user-attachments/assets/5709612f-cf61-4c2b-8511-50e39ad6c195" />
+<img width="832" height="612" alt="image" src="https://github.com/user-attachments/assets/74d7cd45-e945-4e53-a55a-c62455df3831" />
 
 
 ## Software Architecture
@@ -112,4 +113,5 @@ mqtt_username = "" mqtt_password = ""`
 * The system performs a 10-second calibration on startup.
 * Keep the sensor **flat and still** during this period.
 * Offsets are automatically calculated and used to correct readings.
+
 
